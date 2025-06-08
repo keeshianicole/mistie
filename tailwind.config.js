@@ -1,0 +1,90 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#E0F2F1',
+          100: '#B2DFDB',
+          200: '#80CBC4',
+          300: '#4DB6AC',
+          400: '#26A69A',
+          500: '#009688',
+          600: '#00897B',
+          700: '#00796B',
+          800: '#00695C',
+          900: '#004D40',
+          950: '#003D33',
+        },
+        secondary: {
+          50: '#ffffff',
+          100: '#FAFAFA',
+          200: '#F5F5F5',
+          300: '#EEEEEE',
+          400: '#E0E0E0',
+          500: '#BDBDBD',
+          600: '#9E9E9E',
+          700: '#757575',
+          800: '#616161',
+          900: '#424242',
+          950: '#212121',
+        },
+        accent: {
+          50: '#FFF8E1',
+          100: '#FFECB3',
+          200: '#FFE082',
+          300: '#FFD54F',
+          400: '#FFCA28',
+          500: '#FFB300',
+          600: '#FFA000',
+          700: '#FF8F00',
+          800: '#FF6F00',
+          900: '#FF5722',
+          950: '#E65100',
+        },
+        neutral: {
+          50: '#FAFAFA',
+          100: '#F5F5F5',
+          200: '#EEEEEE',
+          300: '#E0E0E0',
+          400: '#BDBDBD',
+          500: '#9E9E9E',
+          600: '#757575',
+          700: '#616161',
+          800: '#424242',
+          900: '#212121',
+          950: '#121212',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        heading: ['Montserrat', 'system-ui', 'sans-serif'],
+      },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+      },
+      boxShadow: {
+        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+      },
+    },
+  },
+  plugins: [],
+};

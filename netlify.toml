@@ -1,0 +1,14 @@
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "dist"
+  prettyURLs = true
+  trailingSlash = true
+  changeFreq = "daily"
+  priority = 0.5
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
